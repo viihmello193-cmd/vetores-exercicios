@@ -1,0 +1,19 @@
+<script>
+    let vetorA = [];
+    let pares = 0;
+    let impares = 0;
+    for(let i=0; i<10; i++){
+        vetorA[i] = parseInt(prompt("Entre com o "+(i+1)+"º número:"));
+    }
+    for(let i=0; i<10; i++){
+        if(vetorA[i] % 2 == 0){
+            pares++;
+        }
+        else{
+            impares++;
+        }
+    }
+    document.write("Vetor A: "+vetorA+"<br>");
+    document.write("Quantidade de pares: "+pares+"<br>");
+    document.write("Quantidade de ímpares: "+impares);
+</script>

@@ -1,0 +1,17 @@
+<script>
+    let vetorA = [];
+    let vetorB = [];
+    let vetorC = [];
+    for(let i=0; i<5; i++){
+        vetorA[i] = parseInt(prompt("Entre com o "+(i+1)+"º valor de A:"));
+    }
+    for(let i=0; i<5; i++){
+        vetorB[i] = parseInt(prompt("Entre com o "+(i+1)+"º valor de B:"));
+    }
+    for(let i=0; i<5; i++){
+        vetorC[i] = vetorA[i] + vetorB[i];
+    }
+    document.write("Vetor A: "+vetorA+"<br>");
+    document.write("Vetor B: "+vetorB+"<br>");
+    document.write("Vetor C: "+vetorC);
+</script>

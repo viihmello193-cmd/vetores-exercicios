@@ -1,0 +1,13 @@
+<script>
+    let vetorA = [];
+    let soma = 0;
+    for(let i=0; i<8; i++){
+        vetorA[i] = parseInt(prompt("Entre com a "+(i+1)+"ª nota:"));
+    }
+    for(let i=0; i<8; i++){
+        soma = soma + vetorA[i];
+    }
+    let media = soma / 8;
+    document.write("Notas: "+vetorA+"<br>");
+    document.write("Média: "+media);
+</script>

@@ -1,0 +1,30 @@
+<script>
+    let notas = [];
+    let soma = 0;
+    let aprovados = 0;
+    let reprovados = 0;
+
+    for(let i=0; i<10; i++){
+        notas[i] = parseInt(prompt("Entre com a nota do "+(i+1)+"º aluno:"));
+    }
+
+    for(let i=0; i<10; i++){
+        soma = soma + notas[i];
+    }
+
+    let media = soma / 10;
+
+    for(let i=0; i<10; i++){
+        if(notas[i] >= 6){
+            aprovados++;
+        }
+        else{
+            reprovados++;
+        }
+    }
+
+    document.write("Notas: "+notas+"<br>");
+    document.write("Média geral: "+media+"<br>");
+    document.write("Aprovados: "+aprovados+"<br>");
+    document.write("Reprovados: "+reprovados);
+</script>

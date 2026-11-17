@@ -1,0 +1,20 @@
+<script>
+    let vetorA = [];
+    for(let i=0; i<10; i++){
+        vetorA[i] = parseInt(prompt("Entre com o "+(i+1)+"º número:"));
+    }
+    let maior = vetorA[0];
+    let menor = vetorA[0];
+    for(let i=0; i<10; i++){
+        if(vetorA[i] > maior){
+            maior = vetorA[i];
+        }
+
+        if(vetorA[i] < menor){
+            menor = vetorA[i];
+        }
+    }
+    document.write("Vetor A: "+vetorA+"<br>");
+    document.write("Maior valor: "+maior+"<br>");
+    document.write("Menor valor: "+menor);
+</script>

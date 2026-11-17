@@ -1,0 +1,25 @@
+<script>
+    let vetorA = [];
+    let encontrou = false;
+
+    for(let i=0; i<10; i++){
+        vetorA[i] = parseInt(prompt("Entre com o "+(i+1)+"º número:"));
+    }
+
+    let pesquisa = parseInt(prompt("Digite o número para pesquisar:"));
+
+    for(let i=0; i<10; i++){
+        if(vetorA[i] == pesquisa){
+            encontrou = true;
+        }
+    }
+
+    document.write("Vetor A: "+vetorA+"<br>");
+
+    if(encontrou == true){
+        document.write("Número encontrado!");
+    }
+    else{
+        document.write("Número não encontrado!");
+    }
+</script>

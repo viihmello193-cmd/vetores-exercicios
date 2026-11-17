@@ -1,0 +1,16 @@
+<script>
+    let vetorA = [];
+    for(let i=0; i<10; i++){
+        vetorA[i] = parseInt(prompt("Entre com o "+(i+1)+"º número:"));
+    }
+    for(let i=0; i<10; i++){
+        for(let j=0; j<9; j++){
+            if(vetorA[j] > vetorA[j+1]){
+                let aux = vetorA[j];
+                vetorA[j] = vetorA[j+1];
+                vetorA[j+1] = aux;
+            }
+        }
+    }
+    document.write("Números em ordem crescente: "+vetorA);
+</script>

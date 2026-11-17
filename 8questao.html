@@ -1,0 +1,24 @@
+<script>
+    let vetorA = [];
+    let positivos = 0;
+    let negativos = 0;
+    let zeros = 0;
+    for(let i=0; i<10; i++){
+        vetorA[i] = parseInt(prompt("Entre com o "+(i+1)+"º número:"));
+    }
+    for(let i=0; i<10; i++){
+        if(vetorA[i] > 0){
+            positivos++;
+        }
+        else if(vetorA[i] < 0){
+            negativos++;
+        }
+        else{
+            zeros++;
+        }
+    }
+    document.write("Vetor A: "+vetorA+"<br>");
+    document.write("Positivos: "+positivos+"<br>");
+    document.write("Negativos: "+negativos+"<br>");
+    document.write("Zeros: "+zeros);
+</script>

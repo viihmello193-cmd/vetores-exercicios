@@ -1,0 +1,11 @@
+<script>
+    let vetorA = [];
+    for(let i=0; i<10; i++){
+        vetorA[i] = parseInt(prompt("Entre com o "+(i+1)+"º número:"));
+    }
+    document.write("Vetor original: "+vetorA+"<br>");
+    document.write("Ordem inversa: ");
+    for(let i=9; i>=0; i--){
+        document.write(vetorA[i]+" ");
+    }
+</script>
